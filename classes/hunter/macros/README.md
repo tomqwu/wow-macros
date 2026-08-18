@@ -13,3 +13,7 @@ Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-ne
 Keep behavior identical across locale variants and verify localized game names before publishing.
 
 Follow the [client localization guide](../../../LOCALIZATION.md).
+
+## Reference context
+
+- [TBC Hunter macro pack and P2 pet handoff — zhCN source](../context/tbc-hunter-macro-pack-and-pet-handoff.md) — 44 imported named macro blocks awaiting behavior verification and `enUS`/`zhTW` localization.
