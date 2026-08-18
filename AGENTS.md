@@ -14,9 +14,13 @@ These instructions apply to the whole repository.
 - Put class-specific content under `classes/<class>/` using lowercase kebab-case names.
 - Put macros in `classes/<class>/macros/`.
 - Put talent builds and import strings in `classes/<class>/talents/`.
-- Name macro files `<specialization>-<purpose>.macro`.
+- For macros containing localized game text, publish matching `<specialization>-<purpose>.enUS.macro`, `<specialization>-<purpose>.zhCN.macro`, and `<specialization>-<purpose>.zhTW.macro` files.
+- Use an unsuffixed `<specialization>-<purpose>.macro` only when every token is client-language neutral.
 - Name talent files `<specialization>-<build>.md`.
+- Include English (`enUS`), Simplified Chinese (`zhCN`), and Traditional Chinese (`zhTW`) explanations in each talent file. Talent import strings normally remain shared.
 - Include the specialization, intended content type, game version or patch, and verification date in talent notes.
+- Keep localized macro variants behaviorally identical and verify spell, item, talent, and aura names in the corresponding client before publishing.
+- Follow `LOCALIZATION.md` for bilingual content and verification requirements.
 - Update the nearest README when adding, moving, or retiring content.
 
 ## Git workflow
