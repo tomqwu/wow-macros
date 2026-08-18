@@ -13,3 +13,7 @@ Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-ne
 Keep behavior identical across locale variants and verify localized game names before publishing.
 
 Follow the [client localization guide](../../../LOCALIZATION.md).
+
+## Reference context
+
+- [TBC Classic / Anniversary Paladin macros — zhCN source](../context/tbc-classic-paladin-macros.md) — imported cross-session notes awaiting verification and `enUS`/`zhTW` localization.
