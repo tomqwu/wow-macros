@@ -33,6 +33,7 @@ The list reflects Retail as verified on 2026-08-18. It includes the Devourer Dem
 - Traditional Chinese macro: `classes/<class>/macros/<specialization>-<purpose>.zhTW.macro`
 - Client-neutral macro: `classes/<class>/macros/<specialization>-<purpose>.macro`
 - Talent build: `classes/<class>/talents/<specialization>-<build>.md`
+- Cross-session reference awaiting verification or localization: `classes/<class>/context/<topic>.md`
 - Use lowercase kebab-case filenames.
 - Record the game version or patch and verification date when behavior can change.
 - Keep explanations next to the macro or import string they describe.
@@ -40,4 +41,4 @@ The list reflects Retail as verified on 2026-08-18. It includes the Devourer Dem
 
 See [LOCALIZATION.md](LOCALIZATION.md) for client-language and verification rules. / 客户端语言及验证规则请参阅 [LOCALIZATION.md](LOCALIZATION.md)。
 
-No macro or talent build has been supplied yet; the repository is ready for the next class-specific conversation.
+No fully localized and verified macro or talent build has been released yet. Imported reference context is linked from the relevant class index until it is promoted into client-specific files.

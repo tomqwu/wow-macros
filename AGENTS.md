@@ -14,6 +14,8 @@ These instructions apply to the whole repository.
 - Put class-specific content under `classes/<class>/` using lowercase kebab-case names.
 - Put macros in `classes/<class>/macros/`.
 - Put talent builds and import strings in `classes/<class>/talents/`.
+- Put distilled cross-session material that still needs verification or localization in `classes/<class>/context/`.
+- Context references must declare their source scope, game version, client locale, import date, and verification status. They do not count as published macro or talent variants.
 - For macros containing localized game text, publish matching `<specialization>-<purpose>.enUS.macro`, `<specialization>-<purpose>.zhCN.macro`, and `<specialization>-<purpose>.zhTW.macro` files.
 - Use an unsuffixed `<specialization>-<purpose>.macro` only when every token is client-language neutral.
 - Name talent files `<specialization>-<build>.md`.
