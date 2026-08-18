@@ -13,3 +13,7 @@ Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-ne
 Keep behavior identical across locale variants and verify localized game names before publishing.
 
 Follow the [client localization guide](../../../LOCALIZATION.md).
+
+## Reference context
+
+- [TBC Combat Rogue macro pack — zhCN source](../context/tbc-combat-rogue-macro-pack.md) — 26 imported macros awaiting behavior verification and `enUS`/`zhTW` localization.
