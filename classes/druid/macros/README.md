@@ -13,3 +13,7 @@ Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-ne
 Keep behavior identical across locale variants and verify localized game names before publishing.
 
 Follow the [client localization guide](../../../LOCALIZATION.md).
+
+## Available macros
+
+- [Nature's Swiftness + Healing Touch](restoration-natures-swiftness-healing-touch.md) — Restoration emergency mouseover heal, including recommended and arena-safe variants for `enUS`, `zhCN`, and `zhTW`.
