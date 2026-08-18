@@ -18,7 +18,7 @@ Before promoting an entry into `../macros/`, test it against the intended TBC cl
 
 Purpose: TBC Rogue leveling / Combat Rogue / Mana-Tombs stealth farming / dungeon farming / basic PvP.
 
-Client: Chinese WoW client skill names.  
+Client: Chinese WoW client skill names.
 Macro condition style: uses `target=mouseover` for better TBC-era compatibility.
 
 ---
@@ -179,7 +179,7 @@ Recommended key: `G`
 
 Recommended stealth bar key: `1`
 
-Use with auto-loot enabled.  
+Use with auto-loot enabled.
 For humanoid targets, this attempts Pick Pocket first, then Cheap Shot.
 
 ```macro
@@ -339,7 +339,7 @@ Replace `致命毒药 VII` with your current rank.
 
 ### 23. Set Focus
 
-Sets mouseover enemy as focus.  
+Sets mouseover enemy as focus.
 If no mouseover exists, sets current hostile target as focus.
 
 ```macro
