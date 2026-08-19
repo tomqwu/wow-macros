@@ -1,6 +1,6 @@
 # Paladin macros
 
-Specializations: Holy, Protection, Retribution.
+TBC talent trees: Holy, Protection, Retribution.
 
 Add each client-sensitive macro as a matching locale set:
 

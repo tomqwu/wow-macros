@@ -1,6 +1,6 @@
 # Warlock macros
 
-Specializations: Affliction, Demonology, Destruction.
+TBC talent trees: Affliction, Demonology, Destruction.
 
 Add each client-sensitive macro as a matching locale set:
 

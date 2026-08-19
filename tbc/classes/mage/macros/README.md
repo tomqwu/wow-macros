@@ -1,6 +1,6 @@
 # Mage macros
 
-Specializations: Arcane, Fire, Frost.
+TBC talent trees: Arcane, Fire, Frost.
 
 Add each client-sensitive macro as a matching locale set:
 

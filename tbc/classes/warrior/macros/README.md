@@ -1,6 +1,6 @@
 # Warrior macros
 
-Specializations: Arms, Fury, Protection.
+TBC talent trees: Arms, Fury, Protection.
 
 Add each client-sensitive macro as a matching locale set:
 

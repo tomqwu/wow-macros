@@ -1,6 +1,6 @@
 # Druid macros
 
-Specializations: Balance, Feral, Guardian, Restoration.
+TBC talent trees: Balance, Feral, Restoration.
 
 Add each client-sensitive macro as a matching locale set:
 

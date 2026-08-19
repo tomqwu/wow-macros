@@ -1,6 +1,6 @@
 # Priest macros
 
-Specializations: Discipline, Holy, Shadow.
+TBC talent trees: Discipline, Holy, Shadow.
 
 Add each client-sensitive macro as a matching locale set:
 

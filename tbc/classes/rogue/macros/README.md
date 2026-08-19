@@ -1,6 +1,6 @@
 # Rogue macros
 
-Specializations: Assassination, Outlaw, Subtlety.
+TBC talent trees: Assassination, Combat, Subtlety.
 
 Add each client-sensitive macro as a matching locale set:
 

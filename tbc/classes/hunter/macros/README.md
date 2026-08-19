@@ -1,6 +1,6 @@
 # Hunter macros
 
-Specializations: Beast Mastery, Marksmanship, Survival.
+TBC talent trees: Beast Mastery, Marksmanship, Survival.
 
 Add each client-sensitive macro as a matching locale set:
 

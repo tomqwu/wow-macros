@@ -1,6 +1,6 @@
 # Shaman macros
 
-Specializations: Elemental, Enhancement, Restoration.
+TBC talent trees: Elemental, Enhancement, Restoration.
 
 Add each client-sensitive macro as a matching locale set:
 
