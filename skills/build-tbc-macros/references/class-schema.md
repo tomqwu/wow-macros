@@ -1,17 +1,18 @@
-# Class page schema
+# Class locale-page schema
 
 ## Contents
 
 - Player inputs
+- Locale files
 - Status model
 - Required page structure
-- Macro entry contract
+- Macro pair contract
 - Import handling
-- Verification log
+- Verification logs
 
 ## Player inputs
 
-Capture these fields before deriving macros. Record `Not supplied` rather than guessing.
+Capture these fields before deriving macros. Record `Not supplied` or `未提供` rather than guessing.
 
 | Field | Why it matters |
 | --- | --- |
@@ -25,23 +26,31 @@ Capture these fields before deriving macros. Record `Not supplied` rather than g
 | Pets, forms, stances, items | Determines stateful commands and localized tokens. |
 | Target priority | Defines mouseover, focus, target, party, arena, or self fallbacks. |
 | Addons and input devices | Affects raid-frame mouseover use and practical keybinds. |
-| Supported locales | This repository requires `enUS` and `zhCN`. |
+
+## Locale files
+
+Every class directory contains exactly this pair:
+
+- `README.md`: English default page. Put `[简体中文](README_zhCN.md)` directly below the title.
+- `README_zhCN.md`: Simplified Chinese page. Put `[English](README.md)` directly below the title.
+
+Do not mix Chinese prose or `zhCN` spell tokens into the English page. Keep source-language backlog only on its source page; summarize and link to it from the other page.
 
 ## Status model
 
-Use exactly one of these statuses:
+Use exactly one of these statuses on both locale pages:
 
 | Status | Meaning | Location |
 | --- | --- | --- |
-| `verified` | Both locale variants were tested on the recorded TBC client build. | `Macro set` |
-| `ready-for-client-test` | Both variants exist and passed static review but lack full client testing. | `Macro set` |
-| `imported-reference` | Raw session material, a single-language macro, or an unreviewed claim. | `Imported reference backlog` |
+| `verified` | Both locale variants were tested on the recorded TBC client build. | Macro set / 宏组合 |
+| `ready-for-client-test` | Both variants exist and passed static review but lack full client testing. | Macro set / 宏组合 |
+| `imported-reference` | Raw session material, a single-language macro, or an unreviewed claim. | Backlog / 导入参考资料 |
 
-Never use a verification date by itself as evidence of client testing. Record what was tested, on which locale and build, in the verification log.
+Never use a date alone as evidence of client testing. Record the result and client build in both verification logs.
 
 ## Required page structure
 
-Every `tbc/classes/<class>/README.md` must contain these level-two headings in order:
+English `README.md` headings, in order:
 
 1. `## Player profile`
 2. `## Rotation and talent model`
@@ -49,40 +58,48 @@ Every `tbc/classes/<class>/README.md` must contain these level-two headings in o
 4. `## Imported reference backlog`
 5. `## Verification log`
 
-The player profile table must include game version, class, level, talent build, key talents, role/content, rotation source, client locales, last updated, and overall status.
+Chinese `README_zhCN.md` headings, in order:
 
-The rotation section must distinguish:
+1. `## 玩家配置`
+2. `## 技能循环与天赋模型`
+3. `## 宏组合`
+4. `## 导入参考资料`
+5. `## 验证记录`
 
-- the player's actual opener and priority;
-- macro opportunities derived from that rotation;
-- actions deliberately left manual.
+Both profile tables capture the same facts. Both rotation sections distinguish the player's actual rotation, macro opportunities, and actions deliberately left manual.
 
-## Macro entry contract
+## Macro pair contract
 
-Each level-three macro entry in `Macro set` must contain:
+Each level-three macro entry has one locale-specific Lua block and these fields.
 
-- stable `ID`;
-- `Status` (`verified` or `ready-for-client-test`);
-- `Derived from` rotation step, talent, or utility requirement;
-- `Use case`;
-- `Targeting` or activation behavior;
-- `Limitations`;
-- paired `English (enUS)` and `简体中文 (zhCN)` Lua blocks;
-- brief usage and test notes when needed.
+English fields: `ID`, `Status`, `Derived from`, `Use case`, `Targeting`, `Limitations`.
 
-The two locale blocks must be structurally identical. Spell, item, talent, aura, pet ability, and other client-visible tokens may differ.
+Chinese fields: `ID`, `状态`, `来源`, `用途`, `目标`, `限制`.
+
+For every macro in either macro set:
+
+- use the same stable ID and status on both pages;
+- keep the same number and order of commands;
+- keep conditionals, target order, modifiers, sequence resets, ranks, and numerical item slots structurally identical;
+- localize only client-visible game tokens;
+- add brief locale-specific usage notes when needed.
 
 ## Import handling
 
-Keep useful original session material, but place it under `Imported reference backlog` until it satisfies the macro entry contract. Add source scope, source locale, game version, import date, and verification status. Never mix raw single-language imports into the paired macro set.
+Place useful original session material under the source locale's backlog until it satisfies the macro pair contract. Record source scope, source locale, game version, import date, and verification status. On the other locale page, include a concise localized summary and a link to the full source backlog.
 
-Large imports may keep their original subsections below a clearly labeled source heading. Normalize them progressively; do not translate hundreds of untested macros merely to make the page look complete.
+Large imports may keep their original subsections on the source page. Normalize them progressively; do not translate hundreds of untested macros merely to make the two pages look equally long.
 
-## Verification log
+## Verification logs
 
-Use this table:
+English table:
 
 | Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Use `not tested`, `static review`, or a concrete test result. A `verified` row requires successful results for both locales and a named client build.
+Chinese table:
+
+| 宏 ID | 状态 | enUS | zhCN | 客户端版本 | 日期 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- |
+
+The same macro IDs and statuses must appear in both logs. A `verified` row requires successful results for both locales and a named client build.

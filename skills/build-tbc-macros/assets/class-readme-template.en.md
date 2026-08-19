@@ -1,5 +1,7 @@
 # {{CLASS}} macros
 
+[简体中文](README_zhCN.md)
+
 ## Player profile
 
 | Field | Value |
@@ -11,7 +13,7 @@
 | Key talents | {{KEY_TALENTS_OR_NOT_SUPPLIED}} |
 | Role / content | {{ROLE_AND_CONTENT}} |
 | Rotation source | {{USER_SUPPLIED_OR_NOT_SUPPLIED}} |
-| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Client locale | English (`enUS`) |
 | Last updated | {{YYYY-MM-DD}} |
 | Overall status | {{STATUS_SUMMARY}} |
 
@@ -33,8 +35,6 @@
 
 ## Macro set
 
-Paired macros belong here only when both locale variants exist. Use `ready-for-client-test` until both are tested on the recorded client build.
-
 ### {{TALENT_TREE}} — {{PURPOSE}}
 
 - ID: `{{STABLE_MACRO_ID}}`
@@ -44,33 +44,22 @@ Paired macros belong here only when both locale variants exist. Use `ready-for-c
 - Targeting: {{TARGET_PRIORITY_OR_ACTIVATION}}
 - Limitations: {{KNOWN_LIMITS}}
 
-#### English (`enUS`)
+#### Macro
 
 ```lua
 #showtooltip {{ENGLISH_SPELL}}
 /cast {{ENGLISH_SPELL}}
 ```
 
-#### 简体中文 (`zhCN`)
-
-```lua
-#showtooltip {{SIMPLIFIED_CHINESE_SPELL}}
-/cast {{SIMPLIFIED_CHINESE_SPELL}}
-```
-
 ## Imported reference backlog
 
 > Status: `imported-reference`
 
-- Source scope: {{SOURCE}}
+- Source scope: {{SOURCE_OR_LINK_TO_ZHCN_BACKLOG}}
 - Source locale: {{LOCALE}}
 - Game version: {{GAME_VERSION}}
 - Imported: {{YYYY-MM-DD}}
 - Verification: Not independently tested
-
-### Source material
-
-{{PRESERVED_SOURCE_CONTEXT}}
 
 ## Verification log
 

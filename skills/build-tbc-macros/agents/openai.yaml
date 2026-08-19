@@ -1,4 +1,4 @@
 interface:
   display_name: "TBC Macro Builder"
   short_description: "Build bilingual TBC macros from player context"
-  default_prompt: "Use $build-tbc-macros to turn my TBC class, talents, rotation, and client details into tested English and Simplified Chinese macros."
+  default_prompt: "Use $build-tbc-macros to turn my TBC class, talents, rotation, and client details into matching English README.md and Simplified Chinese README_zhCN.md macro pages."

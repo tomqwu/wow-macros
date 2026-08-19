@@ -51,12 +51,12 @@ Do not hardcode a rank unless the player's rotation requires it. When a rank is 
 
 ## Localization
 
-- Keep `enUS` and `zhCN` blocks together.
-- Keep commands, conditionals, target order, modifiers, ranks, and item slots identical.
+- Keep `enUS` macros in `README.md` and matching `zhCN` macros in `README_zhCN.md` under the same stable ID.
+- Keep commands, conditionals, target order, modifiers, ranks, and item slots structurally identical across the page pair.
 - Localize only client-visible game tokens.
 - Obtain exact localized spell and item names from the target client, preferably by inserting them from the spellbook or inventory.
 - Do not mark machine-translated or guessed tokens as verified.
-- Use one client-neutral block only when no localized token exists.
+- Repeat a client-neutral macro on both pages so navigation and macro IDs stay complete.
 
 ## Review checklist
 
