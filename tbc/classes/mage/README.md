@@ -1,5 +1,7 @@
 # Mage macros
 
+[简体中文](README_zhCN.md)
+
 ## Player profile
 
 | Field | Value |
@@ -11,8 +13,8 @@
 | Key talents | Not supplied |
 | Role / content | Not supplied |
 | Rotation source | Not supplied |
-| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
-| Last updated | 2026-08-18 |
+| Client locale | English (`enUS`) |
+| Last updated | 2026-08-19 |
 | Overall status | Awaiting a player profile; no macros generated |
 
 ## Rotation and talent model
@@ -33,7 +35,7 @@
 
 ## Macro set
 
-No paired macros yet.
+No macros yet.
 
 ## Imported reference backlog
 

@@ -1,5 +1,7 @@
 # Priest macros
 
+[简体中文](README_zhCN.md)
+
 ## Player profile
 
 | Field | Value |
@@ -11,9 +13,9 @@
 | Key talents | Source includes Vampiric Touch, Circle of Healing, Pain Suppression, Power Infusion, and other alternative-build abilities |
 | Role / content | Shadow raid and dungeon DPS, healing offspec, dispels, resurrection, and arena targeting |
 | Rotation source | Imported `enUS` pack includes boss, mana-safe raid, and multi-mob Shadow priorities plus healing and PvP notes |
-| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
-| Last updated | 2026-08-18 |
-| Overall status | 68 `enUS` macro blocks plus a partial `zhCN` glossary remain `imported-reference`; no paired macro set yet |
+| Client locale | English (`enUS`) |
+| Last updated | 2026-08-19 |
+| Overall status | 68 `enUS` macro blocks remain `imported-reference`; the partial Chinese glossary is retained on the Chinese page; no paired macro set yet |
 
 ## Rotation and talent model
 
@@ -45,7 +47,7 @@ No paired macros yet. Choose one active Priest build, complete its `zhCN` tokens
 - Game version: WoW TBC Classic; specific client build was not supplied
 - Class and roles: Shadow Priest PvE, dungeon, and raid; Holy/Discipline healing offspec; Discipline PvP arena
 - Source macro locale: English (`enUS`)
-- Localization aid: Partial Simplified Chinese (`zhCN`) spell-name glossary
+- Localization aid: A partial Simplified Chinese (`zhCN`) spell-name glossary is retained on the Chinese page
 - Imported: 2026-08-18
 - Contents: 68 Lua macro blocks plus action-bar, targeting, rotation, mana, and dungeon notes
 - Verification: Source-session claims preserved; macro behavior and localized tokens have not been independently revalidated
@@ -809,49 +811,9 @@ Replace the item name if your client is not English.
 
 ---
 
-## 7. Important Chinese Client Spell Name Note
+## 7. Chinese Client Spell Name Note
 
-For Chinese client, do not manually type spell names unless confirmed. Best method:
-
-1. Open macro window.
-2. Put cursor after `/cast`.
-3. Open spellbook.
-4. **Shift-click the spell**.
-5. WoW inserts the correct localized spell name.
-
-Common Chinese spell names you will probably need:
-
-| English | Chinese |
-|---|---|
-| Power Word: Shield | 真言术：盾 |
-| Flash Heal | 快速治疗 |
-| Greater Heal | 强效治疗术 |
-| Renew | 恢复 |
-| Prayer of Mending | 愈合祷言 |
-| Binding Heal | 联结治疗 |
-| Prayer of Healing | 治疗祷言 |
-| Circle of Healing | 治疗之环 |
-| Dispel Magic | 驱散魔法 |
-| Mass Dispel | 群体驱散 |
-| Mana Burn | 法力燃烧 |
-| Psychic Scream | 心灵尖啸 |
-| Pain Suppression | 痛苦压制 |
-| Power Infusion | 能量灌注 |
-| Inner Focus | 心灵专注 |
-| Shadowform | 暗影形态 |
-| Shadow Word: Pain | 暗言术：痛 |
-| Shadow Word: Death | 暗言术：灭 |
-| Vampiric Touch | 吸血鬼之触 |
-| Vampiric Embrace | 吸血鬼的拥抱 |
-| Mind Blast | 心灵震爆 |
-| Mind Flay | 精神鞭笞 |
-| Shadowfiend | 暗影魔 |
-| Fear Ward | 防护恐惧结界 |
-| Shackle Undead | 束缚亡灵 |
-| Mind Soothe | 安抚心灵 |
-| Mind Control | 精神控制 |
-| Fade | 渐隐术 |
-| Resurrection | 复活 |
+The partial spell-name glossary from the source was moved to the [Simplified Chinese page](README_zhCN.md). Insert spells from the target client's spellbook rather than relying on unverified typed names.
 
 ---
 

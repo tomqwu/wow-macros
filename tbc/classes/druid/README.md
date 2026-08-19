@@ -1,5 +1,7 @@
 # Druid macros
 
+[简体中文](README_zhCN.md)
+
 ## Player profile
 
 | Field | Value |
@@ -11,8 +13,8 @@
 | Key talents | Nature's Swiftness |
 | Role / content | Emergency healing through Cell or another secure raid frame; arena-safe fallback requested |
 | Rotation source | Only the emergency-heal step was supplied; full healing rotation was not supplied |
-| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
-| Last updated | 2026-08-18 |
+| Client locale | English (`enUS`) |
+| Last updated | 2026-08-19 |
 | Overall status | Two paired macros are `ready-for-client-test`; no in-client results recorded |
 
 ## Rotation and talent model
@@ -45,7 +47,7 @@
 - Targeting: Friendly living mouseover, friendly living target, then player
 - Limitations: If Nature's Swiftness is unavailable, Healing Touch can begin a normal hard cast; exact client build was not supplied
 
-#### English (`enUS`)
+#### Macro
 
 ```lua
 #showtooltip Nature's Swiftness
@@ -53,16 +55,6 @@
 /cancelform
 /cast Nature's Swiftness
 /cast [@mouseover,help,nodead][@target,help,nodead][@player] Healing Touch
-```
-
-#### 简体中文 (`zhCN`)
-
-```lua
-#showtooltip 自然迅捷
-/stopcasting
-/cancelform
-/cast 自然迅捷
-/cast [@mouseover,help,nodead][@target,help,nodead][@player] 治疗之触
 ```
 
 ### Restoration — Nature's Swiftness emergency heal, arena-safe
@@ -74,7 +66,7 @@
 - Targeting: Friendly living mouseover, then player; current target is intentionally skipped
 - Limitations: If Nature's Swiftness is unavailable, Healing Touch can begin a normal hard cast; exact client build was not supplied
 
-#### English (`enUS`)
+#### Macro
 
 ```lua
 #showtooltip Nature's Swiftness
@@ -84,21 +76,11 @@
 /cast [@mouseover,help,nodead][@player] Healing Touch
 ```
 
-#### 简体中文 (`zhCN`)
-
-```lua
-#showtooltip 自然迅捷
-/stopcasting
-/cancelform
-/cast 自然迅捷
-/cast [@mouseover,help,nodead][@player] 治疗之触
-```
-
 ### Usage notes
 
 A keyboard-bound mouseover macro works over Cell and other secure raid frames. Put the macro on an action bar and bind that slot. On macOS, a Logitech MX side button can be mapped to an unused key such as `F8` or `F9`, then that key can be bound in WoW.
 
-自然迅捷冷却时，此宏可能开始正常读条施放治疗之触。请保留自然迅捷的提示图标，并只在技能可用时使用。如果本地化名称被客户端拒绝，请从对应客户端的法术书中按 Shift 点击插入准确名称。
+If Nature's Swiftness is on cooldown, the macro may begin a normal Healing Touch cast. Keep the Nature's Swiftness tooltip visible and use the macro only when the ability is ready. If a localized name is rejected, insert the exact name from the corresponding client's spellbook with Shift-click.
 
 ## Imported reference backlog
 
