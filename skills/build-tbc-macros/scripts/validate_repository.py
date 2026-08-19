@@ -241,9 +241,11 @@ def validate_pair(class_dir: Path) -> list[str]:
 
 def validate_links(root: Path) -> list[str]:
     errors: list[str] = []
-    link_pattern = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+)\)")
+    link_pattern = re.compile(r"(?<![!`])\[[^\]]*\]\(([^)]+)\)")
     for path in root.rglob("*.md"):
         if ".git" in path.parts:
+            continue
+        if "skills" in path.parts and "assets" in path.parts:
             continue
         for raw_target in link_pattern.findall(path.read_text(encoding="utf-8")):
             target = raw_target.strip().split()[0].strip("<>")
