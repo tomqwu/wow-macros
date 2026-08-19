@@ -16,9 +16,9 @@ Content is currently organized for TBC only. Future game versions should use sib
 
 ## File conventions
 
-- Class macro collection: `<version>/classes/<class>/macros.md`
+- Class macro collection and default class page: `<version>/classes/<class>/README.md`
 - Talent build: `<version>/classes/<class>/talents/<specialization>-<build>.md`
-- Cross-session macro references awaiting verification stay in the matching class's `macros.md` with an explicit status.
+- Cross-session macro references awaiting verification stay in the matching class's `README.md` with an explicit status.
 - Use lowercase kebab-case filenames.
 - Record the game version or patch and verification date when behavior can change.
 - Give each macro a specialization-and-purpose heading and keep its explanation beside its code.

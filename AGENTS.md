@@ -13,11 +13,11 @@ These instructions apply to the whole repository.
 
 - Put each game version in its own top-level folder. The active TBC tree is `tbc/classes/`; do not mix content from incompatible game versions.
 - Put class-specific content under `<version>/classes/<class>/` using lowercase kebab-case names.
-- Put all macros for a class in `<version>/classes/<class>/macros.md`. Do not create one file per macro.
+- Put all macros for a class in `<version>/classes/<class>/README.md` so the class page renders automatically. Do not create one file per macro.
 - Put talent builds in `<version>/classes/<class>/talents/`.
-- Put distilled cross-session macro material in the matching class's `macros.md` under a clearly marked imported-reference section.
+- Put distilled cross-session macro material in the matching class's `README.md` under a clearly marked imported-reference section.
 - Imported references must declare their source scope, game version, client locale, import date, and verification status. They do not count as verified macro variants.
-- Give each macro its own specialization-and-purpose heading inside `macros.md`.
+- Give each macro its own specialization-and-purpose heading inside the class `README.md`.
 - For macros containing localized game text, keep matching `English (enUS)` and `简体中文 (zhCN)` code blocks together under the same macro entry.
 - Use one client-neutral code block only when every token works unchanged in both supported clients.
 - Name talent files `<specialization>-<build>.md`.
