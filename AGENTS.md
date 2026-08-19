@@ -11,16 +11,20 @@ These instructions apply to the whole repository.
 
 ## Content layout
 
+- Use [`skills/build-tbc-macros/SKILL.md`](skills/build-tbc-macros/SKILL.md) whenever creating, generating, normalizing, localizing, or importing class macros.
+- Derive macros from the recorded player level, talent allocation, key talents, role, content, spell rotation, cooldown plan, pets/forms/stances, targeting preferences, and client build. Record missing inputs as `Not supplied`; never invent them.
 - Put each game version in its own top-level folder. The active TBC tree is `tbc/classes/`; do not mix content from incompatible game versions.
 - Put class-specific content under `<version>/classes/<class>/` using lowercase kebab-case names.
 - Put all macros for a class in `<version>/classes/<class>/README.md` so the class page renders automatically. Do not create one file per macro.
 - Put distilled cross-session macro material in the matching class's `README.md` under a clearly marked imported-reference section.
 - Imported references must declare their source scope, game version, client locale, import date, and verification status. They do not count as verified macro variants.
+- Use the skill's required section order and status model. Single-language or untested material stays in `Imported reference backlog`; only paired `enUS`/`zhCN` entries belong in `Macro set`.
 - Give each macro its own specialization-and-purpose heading inside the class `README.md`.
 - For macros containing localized game text, keep matching `English (enUS)` and `简体中文 (zhCN)` code blocks together under the same macro entry.
 - Use one client-neutral code block only when every token works unchanged in both supported clients.
 - Keep localized macro variants behaviorally identical and verify spell, item, talent, and aura names in the corresponding client before publishing.
 - Follow `LOCALIZATION.md` for bilingual content and verification requirements.
+- Run `python3 skills/build-tbc-macros/scripts/validate_repository.py .` before committing class-page changes.
 - Update the nearest README when adding, moving, or retiring content.
 
 ## Git workflow
