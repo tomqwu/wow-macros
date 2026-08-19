@@ -13,13 +13,6 @@ Keep every class's macros in its single `README.md` document. When a macro conta
 
 Verify localized names in the matching client or an authoritative localized Blizzard source. Do not publish a guessed or machine-translated game token as verified.
 
-Talent import strings are normally client-language neutral. Keep one Markdown file per build and include these sections:
-
-- `English (enUS)`
-- `简体中文 (zhCN)`
-
-Record the game version or patch and the verification date once for the shared build.
-
 ## 中文
 
 ### 支持的客户端
@@ -32,10 +25,3 @@ Record the game version or patch and the verification date once for the shared b
 每个职业的所有宏都保存在该职业目录的 `README.md` 文档中，这样打开职业目录时会自动显示。如果宏包含本地化的法术、物品、天赋、光环或其他游戏文本，应在同一宏条目下使用上述标题放置英文和简体中文两个代码块。两个版本的条件与功能应完全一致，只有本地化名称可以不同。仅当所有内容在两个客户端中都无需翻译时，才使用一个客户端通用代码块。
 
 本地化名称必须在对应客户端或暴雪官方本地化资料中验证。未经验证的猜测或机器翻译不得标记为已验证。
-
-天赋导入字符串通常不受客户端语言影响。每套配置使用一个 Markdown 文件，并包含以下小节：
-
-- `English (enUS)`
-- `简体中文 (zhCN)`
-
-同一套配置只需记录一次游戏版本或补丁号以及验证日期。

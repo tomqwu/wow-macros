@@ -1,20 +1,20 @@
-# TBC macros and talents
+# TBC macros
 
 World of Warcraft: The Burning Crusade Classic / TBC Anniversary content, organized by class and client locale.
 
 《魔兽世界：燃烧的远征》经典版 / 周年纪念服内容，按职业与客户端语言整理。
 
-| Class | TBC talent trees | Macros | Talents |
-| --- | --- | --- | --- |
-| Druid | Balance, Feral, Restoration | [Macros](classes/druid/) | [Talents](classes/druid/talents/) |
-| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](classes/hunter/) | [Talents](classes/hunter/talents/) |
-| Mage | Arcane, Fire, Frost | [Macros](classes/mage/) | [Talents](classes/mage/talents/) |
-| Paladin | Holy, Protection, Retribution | [Macros](classes/paladin/) | [Talents](classes/paladin/talents/) |
-| Priest | Discipline, Holy, Shadow | [Macros](classes/priest/) | [Talents](classes/priest/talents/) |
-| Rogue | Assassination, Combat, Subtlety | [Macros](classes/rogue/) | [Talents](classes/rogue/talents/) |
-| Shaman | Elemental, Enhancement, Restoration | [Macros](classes/shaman/) | [Talents](classes/shaman/talents/) |
-| Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/) | [Talents](classes/warlock/talents/) |
-| Warrior | Arms, Fury, Protection | [Macros](classes/warrior/) | [Talents](classes/warrior/talents/) |
+| Class | TBC talent trees | Macros |
+| --- | --- | --- |
+| Druid | Balance, Feral, Restoration | [Macros](classes/druid/) |
+| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](classes/hunter/) |
+| Mage | Arcane, Fire, Frost | [Macros](classes/mage/) |
+| Paladin | Holy, Protection, Retribution | [Macros](classes/paladin/) |
+| Priest | Discipline, Holy, Shadow | [Macros](classes/priest/) |
+| Rogue | Assassination, Combat, Subtlety | [Macros](classes/rogue/) |
+| Shaman | Elemental, Enhancement, Restoration | [Macros](classes/shaman/) |
+| Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/) |
+| Warrior | Arms, Fury, Protection | [Macros](classes/warrior/) |
 
 Each class keeps all macros in its `README.md`, which GitHub displays automatically when the class folder is opened. Client-sensitive entries place their English (`enUS`) and Simplified Chinese (`zhCN`) code blocks together. Imported session material stays in the same class document with an unverified status until it is tested.
 

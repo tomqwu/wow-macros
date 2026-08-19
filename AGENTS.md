@@ -4,8 +4,8 @@ These instructions apply to the whole repository.
 
 ## Purpose
 
-- Keep reusable World of Warcraft macros and talent loadouts organized by class.
-- When a conversation supplies useful macro or talent context, distill it into the relevant repository files before publishing the work.
+- Keep reusable World of Warcraft macros organized by class.
+- When a conversation supplies useful macro context, distill it into the relevant repository files before publishing the work.
 - Store actionable game information, not full chat transcripts. Never commit credentials, account details, private identifiers, or unrelated conversation content.
 - Treat TBC Classic / TBC Anniversary as the default game version unless the user names another version. Record the game version, patch, and verification date when they matter.
 
@@ -14,15 +14,11 @@ These instructions apply to the whole repository.
 - Put each game version in its own top-level folder. The active TBC tree is `tbc/classes/`; do not mix content from incompatible game versions.
 - Put class-specific content under `<version>/classes/<class>/` using lowercase kebab-case names.
 - Put all macros for a class in `<version>/classes/<class>/README.md` so the class page renders automatically. Do not create one file per macro.
-- Put talent builds in `<version>/classes/<class>/talents/`.
 - Put distilled cross-session macro material in the matching class's `README.md` under a clearly marked imported-reference section.
 - Imported references must declare their source scope, game version, client locale, import date, and verification status. They do not count as verified macro variants.
 - Give each macro its own specialization-and-purpose heading inside the class `README.md`.
 - For macros containing localized game text, keep matching `English (enUS)` and `简体中文 (zhCN)` code blocks together under the same macro entry.
 - Use one client-neutral code block only when every token works unchanged in both supported clients.
-- Name talent files `<specialization>-<build>.md`.
-- Include English (`enUS`) and Simplified Chinese (`zhCN`) explanations in each talent file. Include an import string only when the target game version and client support one.
-- Include the specialization, intended content type, game version or patch, and verification date in talent notes.
 - Keep localized macro variants behaviorally identical and verify spell, item, talent, and aura names in the corresponding client before publishing.
 - Follow `LOCALIZATION.md` for bilingual content and verification requirements.
 - Update the nearest README when adding, moving, or retiring content.
