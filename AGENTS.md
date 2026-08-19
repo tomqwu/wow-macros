@@ -15,13 +15,13 @@ These instructions apply to the whole repository.
 - Derive macros from the recorded player level, talent allocation, key talents, role, content, spell rotation, cooldown plan, pets/forms/stances, targeting preferences, and client build. Record missing inputs as `Not supplied`; never invent them.
 - Put each game version in its own top-level folder. The active TBC tree is `tbc/classes/`; do not mix content from incompatible game versions.
 - Put class-specific content under `<version>/classes/<class>/` using lowercase kebab-case names.
-- Put all macros for a class in `<version>/classes/<class>/README.md` so the class page renders automatically. Do not create one file per macro.
-- Put distilled cross-session macro material in the matching class's `README.md` under a clearly marked imported-reference section.
+- Put the English class page in `<version>/classes/<class>/README.md` so it renders automatically. Put the Simplified Chinese page beside it as `README_zhCN.md`, and add reciprocal locale links at the top of both files. Do not create one file per macro.
+- Put distilled cross-session macro material in the source locale's class page under a clearly marked imported-reference section. Summarize and link to it from the other locale page.
 - Imported references must declare their source scope, game version, client locale, import date, and verification status. They do not count as verified macro variants.
-- Use the skill's required section order and status model. Single-language or untested material stays in `Imported reference backlog`; only paired `enUS`/`zhCN` entries belong in `Macro set`.
-- Give each macro its own specialization-and-purpose heading inside the class `README.md`.
-- For macros containing localized game text, keep matching `English (enUS)` and `简体中文 (zhCN)` code blocks together under the same macro entry.
-- Use one client-neutral code block only when every token works unchanged in both supported clients.
+- Use the skill's required localized section order and status model. Single-language or untested material stays in the source page's backlog; only macros with matching entries on both locale pages belong in the macro set.
+- Give each macro its own specialization-and-purpose heading on both locale pages and reuse the same stable ID and status.
+- Put `enUS` macro code and English explanations in `README.md`; put structurally matching `zhCN` macro code and Chinese explanations in `README_zhCN.md`.
+- Repeat a client-neutral macro on both locale pages so their macro IDs remain complete.
 - Keep localized macro variants behaviorally identical and verify spell, item, talent, and aura names in the corresponding client before publishing.
 - Follow `LOCALIZATION.md` for bilingual content and verification requirements.
 - Run `python3 skills/build-tbc-macros/scripts/validate_repository.py .` before committing class-page changes.

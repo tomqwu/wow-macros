@@ -1,10 +1,10 @@
 # WoW Macros
 
+[简体中文](README_zhCN.md)
+
 A versioned library of World of Warcraft macros distilled from working conversations.
 
-一个从对话中整理并按游戏版本保存的《魔兽世界》宏命令库。
-
-## Active version / 当前版本
+## Active version
 
 | Version | Status | Browse |
 | --- | --- | --- |
@@ -12,24 +12,26 @@ A versioned library of World of Warcraft macros distilled from working conversat
 
 Content is currently organized for TBC only. Future game versions should use sibling top-level folders so incompatible macros are never mixed.
 
-目前内容仅按 TBC 整理。其他游戏版本应使用独立的顶层目录，避免混用不兼容的宏。
-
-## Generation workflow / 生成流程
+## Generation workflow
 
 Use the repository's [TBC Macro Builder skill](skills/build-tbc-macros/SKILL.md) to turn a player's level, talent build, key talents, rotation, role, content, targeting preferences, and client details into a compact macro set.
 
-使用仓库中的 [TBC 宏生成 Skill](skills/build-tbc-macros/SKILL.md)，根据玩家等级、天赋配置、关键天赋、技能循环、职责、玩法、目标优先级和客户端信息生成精简宏组合。
+Every class uses two reciprocal pages:
 
-Every class page uses the same player profile, rotation/talent model, paired macro set, imported-reference backlog, and verification log. English-only or Chinese-only source material remains backlog until both variants exist and are tested.
+- `README.md`: default English page with `enUS` macros.
+- `README_zhCN.md`: Simplified Chinese page with matching `zhCN` macros.
+
+Both pages share the same player model, stable macro IDs, statuses, command structure, and verification record. Single-language source material remains backlog on its source-locale page until a matching macro is created and tested.
 
 ## File conventions
 
-- Class macro collection and default class page: `<version>/classes/<class>/README.md`
-- Cross-session macro references awaiting verification stay in the matching class's `README.md` with an explicit status.
-- Use lowercase kebab-case filenames.
+- Default English class page: `<version>/classes/<class>/README.md`
+- Simplified Chinese class page: `<version>/classes/<class>/README_zhCN.md`
+- Put reciprocal locale links at the top of both files.
+- Keep cross-session references awaiting verification in the source locale's backlog with an explicit status.
 - Record the game version or patch and verification date when behavior can change.
-- Give each macro a specialization-and-purpose heading and keep its explanation beside its code.
-- Keep matching English (`enUS`) and Simplified Chinese (`zhCN`) code blocks together under the same macro entry and behaviorally identical.
+- Give each macro a specialization-and-purpose heading and stable ID on both pages.
+- Keep matching `enUS` and `zhCN` macros behaviorally and structurally identical.
 - Do not create a separate file for each macro.
 
-See [LOCALIZATION.md](LOCALIZATION.md) for client-language and verification rules. / 客户端语言及验证规则请参阅 [LOCALIZATION.md](LOCALIZATION.md)。
+See [LOCALIZATION.md](LOCALIZATION.md) for client-language and verification rules.

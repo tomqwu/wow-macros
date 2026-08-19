@@ -2,30 +2,34 @@
 
 ## English
 
-### Supported clients
+### Locale pages
 
-| Locale | Client language | Section heading |
+| Locale | Client language | Class page |
 | --- | --- | --- |
-| `enUS` | English | `English (enUS)` |
-| `zhCN` | Simplified Chinese | `简体中文 (zhCN)` |
+| `enUS` | English | `README.md` |
+| `zhCN` | Simplified Chinese | `README_zhCN.md` |
 
-Keep every class's macros in its single `README.md` document. When a macro contains localized spell, item, talent, aura, or other game text, place both client variants under the same macro entry using the headings above. Keep their conditionals and behavior identical; only localized tokens should differ. Use one client-neutral code block only when every token works unchanged in both supported clients.
+The English `README.md` is the default page and links to `[简体中文](README_zhCN.md)` at the top. The Chinese page links back with `[English](README.md)`.
 
-Keep single-language imports in `Imported reference backlog`. Move an entry into `Macro set` only after matching `enUS` and `zhCN` blocks exist. Mark it `verified` only after both variants are tested on the recorded client build.
+Store English explanations and `enUS` macros only in `README.md`. Store Chinese explanations and matching `zhCN` macros in `README_zhCN.md`. Use the same stable ID and status for a macro on both pages. Keep commands, conditionals, target order, modifiers, ranks, and numerical item slots structurally identical; localize only client-visible game tokens.
+
+Keep a single-language import in the source locale's backlog. On the other page, summarize it and link to the source backlog. Move it into both macro sets only when both locale entries exist. Mark it `verified` only after both variants are tested on the recorded client build.
 
 Verify localized names in the matching client or an authoritative localized Blizzard source. Do not publish a guessed or machine-translated game token as verified.
 
 ## 中文
 
-### 支持的客户端
+### 语言页面
 
-| 区域代码 | 客户端语言 | 小节标题 |
+| 区域代码 | 客户端语言 | 职业页面 |
 | --- | --- | --- |
-| `enUS` | 英文 | `English (enUS)` |
-| `zhCN` | 简体中文 | `简体中文 (zhCN)` |
+| `enUS` | 英文 | `README.md` |
+| `zhCN` | 简体中文 | `README_zhCN.md` |
 
-每个职业的所有宏都保存在该职业目录的 `README.md` 文档中，这样打开职业目录时会自动显示。如果宏包含本地化的法术、物品、天赋、光环或其他游戏文本，应在同一宏条目下使用上述标题放置英文和简体中文两个代码块。两个版本的条件与功能应完全一致，只有本地化名称可以不同。仅当所有内容在两个客户端中都无需翻译时，才使用一个客户端通用代码块。
+英文 `README.md` 是默认页面，顶部使用 `[简体中文](README_zhCN.md)` 链接到中文页面。中文页面顶部使用 `[English](README.md)` 返回英文页面。
 
-单语言导入内容必须保存在 `Imported reference backlog`。只有同时具备 `enUS` 和 `zhCN` 代码块后，条目才能移入 `Macro set`；只有两个版本都在已记录的客户端版本中通过测试后，才能标记为 `verified`。
+英文说明和 `enUS` 宏只保存在 `README.md`；中文说明和对应的 `zhCN` 宏保存在 `README_zhCN.md`。同一个宏在两个页面必须使用相同的稳定 ID 和状态。命令、条件、目标顺序、修饰键、等级和数字物品栏位必须保持相同结构，只有客户端可见的游戏名称可以本地化。
+
+单语言导入内容保存在来源语言页面的待处理区。另一语言页面只提供摘要和来源链接。只有两个语言条目都存在后，才能移入两个页面的宏组合；只有两个版本都在已记录的客户端版本中通过测试后，才能标记为 `verified`。
 
 本地化名称必须在对应客户端或暴雪官方本地化资料中验证。未经验证的猜测或机器翻译不得标记为已验证。
