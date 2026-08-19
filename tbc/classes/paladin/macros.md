@@ -1,4 +1,8 @@
-# TBC Paladin cross-session reference
+# Paladin macros
+
+TBC talent trees: Holy, Protection, Retribution.
+
+Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -11,7 +15,7 @@
 - Verification: Source-session claims preserved; macro behavior, spell ranks, and localized tokens have not been independently revalidated
 - Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 
-Before promoting any entry into `../macros/`, recheck it against the intended TBC client/build, verify localized spell and item names in the matching client, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). Exact Chinese ranks should be inserted from the spellbook with Shift-click when client formatting differs.
+Before marking an entry verified, recheck it against the intended TBC client/build, verify localized spell and item names in the matching client, and add the matching variant required by [LOCALIZATION.md](../../../LOCALIZATION.md). Exact Chinese ranks should be inserted from the spellbook with Shift-click when client formatting differs.
 
 ## TBC Paladin Macros — 中文客户端
 

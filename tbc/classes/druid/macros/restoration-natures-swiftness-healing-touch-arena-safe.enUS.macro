@@ -1,5 +1,0 @@
-#showtooltip Nature's Swiftness
-/stopcasting
-/cancelform
-/cast Nature's Swiftness
-/cast [@mouseover,help,nodead][@player] Healing Touch

@@ -1,4 +1,8 @@
-# TBC Warlock cross-session reference
+# Warlock macros
+
+TBC talent trees: Affliction, Demonology, Destruction.
+
+Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -13,7 +17,7 @@
 - Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 - Privacy: The source character-name line was intentionally omitted
 
-Before promoting an entry into `../macros/`, test it against the intended TBC client/build, verify localized spell, item, and pet-condition names, split macros that exceed the TBC character limit, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after removing its outer copy fence and character identifier, nesting headings, and normalizing trailing whitespace.
+Before marking an entry verified, test it against the intended TBC client/build, verify localized spell, item, and pet-condition names, split macros that exceed the TBC character limit, and add the matching variant required by [LOCALIZATION.md](../../../LOCALIZATION.md). The imported body is preserved after removing its outer copy fence and character identifier, nesting headings, and normalizing trailing whitespace.
 
 ## TBC Warlock Macro Pack — Chinese Client
 

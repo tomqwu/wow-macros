@@ -6,18 +6,18 @@ World of Warcraft: The Burning Crusade Classic / TBC Anniversary content, organi
 
 | Class | TBC talent trees | Macros | Talents |
 | --- | --- | --- | --- |
-| Druid | Balance, Feral, Restoration | [Macros](classes/druid/macros/) | [Talents](classes/druid/talents/) |
-| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](classes/hunter/macros/) | [Talents](classes/hunter/talents/) |
-| Mage | Arcane, Fire, Frost | [Macros](classes/mage/macros/) | [Talents](classes/mage/talents/) |
-| Paladin | Holy, Protection, Retribution | [Macros](classes/paladin/macros/) | [Talents](classes/paladin/talents/) |
-| Priest | Discipline, Holy, Shadow | [Macros](classes/priest/macros/) | [Talents](classes/priest/talents/) |
-| Rogue | Assassination, Combat, Subtlety | [Macros](classes/rogue/macros/) | [Talents](classes/rogue/talents/) |
-| Shaman | Elemental, Enhancement, Restoration | [Macros](classes/shaman/macros/) | [Talents](classes/shaman/talents/) |
-| Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/macros/) | [Talents](classes/warlock/talents/) |
-| Warrior | Arms, Fury, Protection | [Macros](classes/warrior/macros/) | [Talents](classes/warrior/talents/) |
+| Druid | Balance, Feral, Restoration | [Macros](classes/druid/macros.md) | [Talents](classes/druid/talents/) |
+| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](classes/hunter/macros.md) | [Talents](classes/hunter/talents/) |
+| Mage | Arcane, Fire, Frost | [Macros](classes/mage/macros.md) | [Talents](classes/mage/talents/) |
+| Paladin | Holy, Protection, Retribution | [Macros](classes/paladin/macros.md) | [Talents](classes/paladin/talents/) |
+| Priest | Discipline, Holy, Shadow | [Macros](classes/priest/macros.md) | [Talents](classes/priest/talents/) |
+| Rogue | Assassination, Combat, Subtlety | [Macros](classes/rogue/macros.md) | [Talents](classes/rogue/talents/) |
+| Shaman | Elemental, Enhancement, Restoration | [Macros](classes/shaman/macros.md) | [Talents](classes/shaman/talents/) |
+| Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/macros.md) | [Talents](classes/warlock/talents/) |
+| Warrior | Arms, Fury, Protection | [Macros](classes/warrior/macros.md) | [Talents](classes/warrior/talents/) |
 
-Macro files use `enUS` and `zhCN` suffixes when spell or item names depend on the client language. Material imported from earlier sessions remains under a class's `context/` folder until it is verified and promoted into reusable macro or talent files.
+Each class keeps all macros in one `macros.md` document. Client-sensitive entries place their English (`enUS`) and Simplified Chinese (`zhCN`) code blocks together. Imported session material stays in the same class document with an unverified status until it is tested.
 
-宏中的法术或物品名称依赖客户端语言时，文件使用 `enUS` 和 `zhCN` 后缀。从其他会话导入的资料会先保存在对应职业的 `context/` 目录中，经过验证后再整理为可复用的宏或天赋文件。
+每个职业的所有宏都保存在同一个 `macros.md` 文档中。宏中的法术或物品名称依赖客户端语言时，英文（`enUS`）和简体中文（`zhCN`）代码块放在同一条目中。从其他会话导入的资料会在同一职业文档中标记为未验证，测试完成后再更新状态。
 
 See the repository [localization guide](../LOCALIZATION.md) for publishing and verification rules.

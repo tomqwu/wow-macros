@@ -1,4 +1,8 @@
-# TBC Priest cross-session reference
+# Priest macros
+
+TBC talent trees: Discipline, Holy, Shadow.
+
+Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -12,7 +16,7 @@
 - Verification: Source-session claims preserved; macro behavior and localized tokens have not been independently revalidated
 - Locale completeness: Complete source pack is not yet available as matching `enUS` and `zhCN` release files
 
-Before promoting an entry into `../macros/`, test it against the intended TBC client/build, confirm features such as `@cursor` where noted, verify localized ability and item names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after heading nesting and trailing-whitespace normalization.
+Before marking an entry verified, test it against the intended TBC client/build, confirm features such as `@cursor` where noted, verify localized ability and item names, and add the matching variant required by [LOCALIZATION.md](../../../LOCALIZATION.md). The imported body is preserved after heading nesting and trailing-whitespace normalization.
 
 ## TBC Priest Macro Pack
 **Scope:** Shadow Priest PvE / dungeon / raid, Holy-Disc healing offspec, Disc PvP arena

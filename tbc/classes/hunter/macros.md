@@ -1,4 +1,8 @@
-# TBC Hunter cross-session reference
+# Hunter macros
+
+TBC talent trees: Beast Mastery, Marksmanship, Survival.
+
+Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -14,7 +18,7 @@
 - Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 - Privacy and scope: The pet name, response-language preference, and next-session control instruction were intentionally omitted
 
-The source format places a human-readable macro name on the first line of every code block. That name is not executable and must be removed when copying the macro into WoW or promoting it into `../macros/`. Before promotion, test against the intended TBC client/build, verify exact localized spell and pet ability names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after the documented privacy/scope removals, heading nesting, and trailing-whitespace normalization.
+The source format places a human-readable macro name on the first line of every code block. That name is not executable and must be removed when copying the macro into WoW. Before marking an entry verified, test it against the intended TBC client/build, verify exact localized spell and pet ability names, and add the matching variant required by [LOCALIZATION.md](../../../LOCALIZATION.md). The imported body is preserved after the documented privacy/scope removals, heading nesting, and trailing-whitespace normalization.
 
 ## TBC Hunter — Complete Macro Pack and P2 Pet Handoff
 

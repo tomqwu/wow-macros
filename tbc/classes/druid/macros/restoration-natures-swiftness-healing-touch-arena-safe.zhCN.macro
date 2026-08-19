@@ -1,5 +1,0 @@
-#showtooltip 自然迅捷
-/stopcasting
-/cancelform
-/cast 自然迅捷
-/cast [@mouseover,help,nodead][@player] 治疗之触

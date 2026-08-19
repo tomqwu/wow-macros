@@ -1,4 +1,8 @@
-# TBC Combat Rogue cross-session reference
+# Rogue macros
+
+TBC talent trees: Assassination, Combat, Subtlety.
+
+Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -12,7 +16,7 @@
 - Verification: Source-session claims preserved; macro behavior, item ranks, and localized tokens have not been independently revalidated
 - Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 
-Before promoting an entry into `../macros/`, test it against the intended TBC client/build, verify localized ability and item names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). Replace poison ranks and the bandage with exact bag items. The source intentionally uses `target=mouseover` syntax for TBC-era compatibility.
+Before marking an entry verified, test it against the intended TBC client/build, verify localized ability and item names, and add the matching variant required by [LOCALIZATION.md](../../../LOCALIZATION.md). Replace poison ranks and the bandage with exact bag items. The source intentionally uses `target=mouseover` syntax for TBC-era compatibility.
 
 ## TBC Rogue Combat Macro Pack
 

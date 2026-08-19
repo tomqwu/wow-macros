@@ -1,4 +1,10 @@
-# Nature's Swiftness + Healing Touch
+# Druid macros
+
+TBC talent trees: Balance, Feral, Restoration.
+
+Each macro entry keeps its English (`enUS`) and Simplified Chinese (`zhCN`) client variants together in this document.
+
+## Restoration — Nature's Swiftness + Healing Touch
 
 - Game: WoW TBC Classic / TBC Anniversary
 - Specialization: Restoration Druid
@@ -7,14 +13,55 @@
 - Verification date: 2026-08-18
 - Source: User-supplied `enUS` and `zhCN` session context
 
-## Macro variants
+### Recommended
 
-| Behavior | English | Simplified Chinese |
-| --- | --- | --- |
-| Recommended | [enUS](restoration-natures-swiftness-healing-touch.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch.zhCN.macro) |
-| Arena-safe | [enUS](restoration-natures-swiftness-healing-touch-arena-safe.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch-arena-safe.zhCN.macro) |
+Target priority: friendly living mouseover, friendly living target, then the player.
 
-## English
+#### English (`enUS`)
+
+```lua
+#showtooltip Nature's Swiftness
+/stopcasting
+/cancelform
+/cast Nature's Swiftness
+/cast [@mouseover,help,nodead][@target,help,nodead][@player] Healing Touch
+```
+
+#### 简体中文 (`zhCN`)
+
+```lua
+#showtooltip 自然迅捷
+/stopcasting
+/cancelform
+/cast 自然迅捷
+/cast [@mouseover,help,nodead][@target,help,nodead][@player] 治疗之触
+```
+
+### Arena-safe
+
+Target priority: friendly living mouseover, then the player. The current target is intentionally skipped.
+
+#### English (`enUS`)
+
+```lua
+#showtooltip Nature's Swiftness
+/stopcasting
+/cancelform
+/cast Nature's Swiftness
+/cast [@mouseover,help,nodead][@player] Healing Touch
+```
+
+#### 简体中文 (`zhCN`)
+
+```lua
+#showtooltip 自然迅捷
+/stopcasting
+/cancelform
+/cast 自然迅捷
+/cast [@mouseover,help,nodead][@player] 治疗之触
+```
+
+### English notes
 
 The macro stops the current cast, cancels any shapeshift form, activates Nature's Swiftness, and casts the highest learned rank of Healing Touch.
 
@@ -36,7 +83,7 @@ WoW macros cannot conditionally test whether the Nature's Swiftness buff is acti
 
 Suggested binding: `R`, `Shift-R`, or a mapped mouse button.
 
-## 简体中文
+### 简体中文说明
 
 此宏会停止当前施法、取消变形形态、激活自然迅捷，并施放已学会的最高等级治疗之触。
 
@@ -44,7 +91,7 @@ Suggested binding: `R`, `Shift-R`, or a mapped mouse button.
 
 普通按键绑定的鼠标指向宏可在 Cell 等安全团队框架上使用。自然迅捷冷却时，此宏可能开始正常读条施放治疗之触；请保留自然迅捷的提示图标，并只在技能可用时使用。
 
-## Localization sources
+### Localization sources
 
 - `enUS` and `zhCN` macro text was supplied directly in the session context.
 
