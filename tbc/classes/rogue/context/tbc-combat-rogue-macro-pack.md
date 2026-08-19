@@ -10,7 +10,7 @@
 - Imported: 2026-08-18
 - Contents: 26 macros plus keybind, rotation, poison, item, and farming notes
 - Verification: Source-session claims preserved; macro behavior, item ranks, and localized tokens have not been independently revalidated
-- Locale completeness: `zhCN` source only; matching `enUS` and `zhTW` release files have not been produced
+- Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 
 Before promoting an entry into `../macros/`, test it against the intended TBC client/build, verify localized ability and item names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). Replace poison ranks and the bandage with exact bag items. The source intentionally uses `target=mouseover` syntax for TBC-era compatibility.
 

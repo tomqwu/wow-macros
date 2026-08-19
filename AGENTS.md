@@ -17,10 +17,10 @@ These instructions apply to the whole repository.
 - Put talent builds in `<version>/classes/<class>/talents/`.
 - Put distilled cross-session material that still needs verification or localization in `<version>/classes/<class>/context/`.
 - Context references must declare their source scope, game version, client locale, import date, and verification status. They do not count as published macro or talent variants.
-- For macros containing localized game text, publish matching `<specialization>-<purpose>.enUS.macro`, `<specialization>-<purpose>.zhCN.macro`, and `<specialization>-<purpose>.zhTW.macro` files.
+- For macros containing localized game text, publish matching `<specialization>-<purpose>.enUS.macro` and `<specialization>-<purpose>.zhCN.macro` files.
 - Use an unsuffixed `<specialization>-<purpose>.macro` only when every token is client-language neutral.
 - Name talent files `<specialization>-<build>.md`.
-- Include English (`enUS`), Simplified Chinese (`zhCN`), and Traditional Chinese (`zhTW`) explanations in each talent file. Include an import string only when the target game version and client support one.
+- Include English (`enUS`) and Simplified Chinese (`zhCN`) explanations in each talent file. Include an import string only when the target game version and client support one.
 - Include the specialization, intended content type, game version or patch, and verification date in talent notes.
 - Keep localized macro variants behaviorally identical and verify spell, item, talent, and aura names in the corresponding client before publishing.
 - Follow `LOCALIZATION.md` for bilingual content and verification requirements.

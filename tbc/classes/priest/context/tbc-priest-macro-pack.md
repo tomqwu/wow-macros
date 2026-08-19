@@ -10,7 +10,7 @@
 - Imported: 2026-08-18
 - Contents: 68 Lua macro blocks plus action-bar, targeting, rotation, mana, and dungeon notes
 - Verification: Source-session claims preserved; macro behavior and localized tokens have not been independently revalidated
-- Locale completeness: Complete source pack is not yet available as matching `enUS`, `zhCN`, and `zhTW` release files
+- Locale completeness: Complete source pack is not yet available as matching `enUS` and `zhCN` release files
 
 Before promoting an entry into `../macros/`, test it against the intended TBC client/build, confirm features such as `@cursor` where noted, verify localized ability and item names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after heading nesting and trailing-whitespace normalization.
 

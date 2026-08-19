@@ -9,7 +9,7 @@
 - Source client locale: Simplified Chinese (`zhCN`)
 - Imported: 2026-08-18
 - Verification: Source-session claims preserved; macro behavior, spell ranks, and localized tokens have not been independently revalidated
-- Locale completeness: `zhCN` source only; matching `enUS` and `zhTW` release files have not been produced
+- Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 
 Before promoting any entry into `../macros/`, recheck it against the intended TBC client/build, verify localized spell and item names in the matching client, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). Exact Chinese ranks should be inserted from the spellbook with Shift-click when client formatting differs.
 

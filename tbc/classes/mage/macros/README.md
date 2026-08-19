@@ -6,7 +6,6 @@ Add each client-sensitive macro as a matching locale set:
 
 - `<specialization>-<purpose>.enUS.macro` for English
 - `<specialization>-<purpose>.zhCN.macro` for Simplified Chinese
-- `<specialization>-<purpose>.zhTW.macro` for Traditional Chinese
 
 Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-neutral content.
 

@@ -10,7 +10,7 @@
 - Imported: 2026-08-18
 - Contents: 59 Lua macro blocks plus spell mapping, keybind, rotation, threat, and TBC compatibility notes
 - Verification: Source-session claims preserved; macro behavior, localized pet conditions, ranks, and item names have not been independently revalidated
-- Locale completeness: `zhCN` source only; matching `enUS` and `zhTW` release files have not been produced
+- Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 - Privacy: The source character-name line was intentionally omitted
 
 Before promoting an entry into `../macros/`, test it against the intended TBC client/build, verify localized spell, item, and pet-condition names, split macros that exceed the TBC character limit, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after removing its outer copy fence and character identifier, nesting headings, and normalizing trailing whitespace.

@@ -3,16 +3,16 @@
 - Game: WoW TBC Classic / TBC Anniversary
 - Specialization: Restoration Druid
 - Purpose: One-button emergency mouseover heal
-- Client locales: `enUS`, `zhCN`, `zhTW`
+- Client locales: `enUS`, `zhCN`
 - Verification date: 2026-08-18
-- Source: User-supplied `enUS` and `zhCN` session context; `zhTW` spell terminology cross-checked against official Blizzard localization
+- Source: User-supplied `enUS` and `zhCN` session context
 
 ## Macro variants
 
-| Behavior | English | Simplified Chinese | Traditional Chinese |
-| --- | --- | --- | --- |
-| Recommended | [enUS](restoration-natures-swiftness-healing-touch.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch.zhCN.macro) | [zhTW](restoration-natures-swiftness-healing-touch.zhTW.macro) |
-| Arena-safe | [enUS](restoration-natures-swiftness-healing-touch-arena-safe.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch-arena-safe.zhCN.macro) | [zhTW](restoration-natures-swiftness-healing-touch-arena-safe.zhTW.macro) |
+| Behavior | English | Simplified Chinese |
+| --- | --- | --- |
+| Recommended | [enUS](restoration-natures-swiftness-healing-touch.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch.zhCN.macro) |
+| Arena-safe | [enUS](restoration-natures-swiftness-healing-touch-arena-safe.enUS.macro) | [zhCN](restoration-natures-swiftness-healing-touch-arena-safe.zhCN.macro) |
 
 ## English
 
@@ -44,18 +44,8 @@ Suggested binding: `R`, `Shift-R`, or a mapped mouse button.
 
 普通按键绑定的鼠标指向宏可在 Cell 等安全团队框架上使用。自然迅捷冷却时，此宏可能开始正常读条施放治疗之触；请保留自然迅捷的提示图标，并只在技能可用时使用。
 
-## 繁體中文
-
-此巨集會停止目前施法、取消變形形態、啟動自然迅捷，並施放已學會的最高等級治療之觸。
-
-建議版的目標優先順序為：存活的友方滑鼠指向目標、存活的友方目前目標、玩家自己。競技場安全版會略過目前目標，只治療滑鼠指向目標，否則治療自己。
-
-一般按鍵綁定的滑鼠指向巨集可在 Cell 等安全團隊框架上使用。自然迅捷冷卻時，此巨集可能開始正常讀條施放治療之觸；請保留自然迅捷的提示圖示，並只在技能可用時使用。
-
 ## Localization sources
 
 - `enUS` and `zhCN` macro text was supplied directly in the session context.
-- Blizzard's Traditional Chinese [Druid class article](https://worldofwarcraft.blizzard.com/zh-tw/news/19956929/) uses `治療之觸`.
-- Blizzard's Traditional Chinese [5.4 patch notes](https://worldofwarcraft.blizzard.com/zh-tw/news/10788364/) use `自然迅捷`.
 
 If any localized token is rejected by the TBC client, replace it by Shift-clicking the exact spell from that client's spellbook into the macro editor.

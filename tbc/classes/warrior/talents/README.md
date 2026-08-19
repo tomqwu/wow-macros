@@ -10,7 +10,6 @@ Include explanation sections for:
 
 - `English (enUS)`
 - `简体中文 (zhCN)`
-- `繁體中文 (zhTW)`
 
 Record the exact TBC version or build, verification date, intended content, point allocation, talent-calculator source, and any usage notes. Include an import string only when the target TBC client supports one.
 

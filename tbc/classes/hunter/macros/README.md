@@ -6,7 +6,6 @@ Add each client-sensitive macro as a matching locale set:
 
 - `<specialization>-<purpose>.enUS.macro` for English
 - `<specialization>-<purpose>.zhCN.macro` for Simplified Chinese
-- `<specialization>-<purpose>.zhTW.macro` for Traditional Chinese
 
 Use an unsuffixed `<specialization>-<purpose>.macro` only for client-language-neutral content.
 
@@ -16,4 +15,4 @@ Follow the [client localization guide](../../../../LOCALIZATION.md).
 
 ## Reference context
 
-- [TBC Hunter macro pack and P2 pet handoff — zhCN source](../context/tbc-hunter-macro-pack-and-pet-handoff.md) — 44 imported named macro blocks awaiting behavior verification and `enUS`/`zhTW` localization.
+- [TBC Hunter macro pack and P2 pet handoff — zhCN source](../context/tbc-hunter-macro-pack-and-pet-handoff.md) — 44 imported named macro blocks awaiting behavior verification and `enUS` localization.

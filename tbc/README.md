@@ -16,8 +16,8 @@ World of Warcraft: The Burning Crusade Classic / TBC Anniversary content, organi
 | Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/macros/) | [Talents](classes/warlock/talents/) |
 | Warrior | Arms, Fury, Protection | [Macros](classes/warrior/macros/) | [Talents](classes/warrior/talents/) |
 
-Macro files use `enUS`, `zhCN`, and `zhTW` suffixes when spell or item names depend on the client language. Material imported from earlier sessions remains under a class's `context/` folder until it is verified and promoted into reusable macro or talent files.
+Macro files use `enUS` and `zhCN` suffixes when spell or item names depend on the client language. Material imported from earlier sessions remains under a class's `context/` folder until it is verified and promoted into reusable macro or talent files.
 
-宏中的法术或物品名称依赖客户端语言时，文件使用 `enUS`、`zhCN` 和 `zhTW` 后缀。从其他会话导入的资料会先保存在对应职业的 `context/` 目录中，经过验证后再整理为可复用的宏或天赋文件。
+宏中的法术或物品名称依赖客户端语言时，文件使用 `enUS` 和 `zhCN` 后缀。从其他会话导入的资料会先保存在对应职业的 `context/` 目录中，经过验证后再整理为可复用的宏或天赋文件。
 
 See the repository [localization guide](../LOCALIZATION.md) for publishing and verification rules.

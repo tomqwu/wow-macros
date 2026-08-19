@@ -11,7 +11,7 @@
 - Imported: 2026-08-18
 - Contents: 44 named macro blocks plus action-bar, limitations, pet training, resistance, and raid-role notes
 - Verification: Source-session claims preserved; macro behavior, localized tokens, pet training totals, and client compatibility have not been independently revalidated
-- Locale completeness: `zhCN` source only; matching `enUS` and `zhTW` release files have not been produced
+- Locale completeness: `zhCN` source only; matching `enUS` release files have not been produced
 - Privacy and scope: The pet name, response-language preference, and next-session control instruction were intentionally omitted
 
 The source format places a human-readable macro name on the first line of every code block. That name is not executable and must be removed when copying the macro into WoW or promoting it into `../macros/`. Before promotion, test against the intended TBC client/build, verify exact localized spell and pet ability names, and create the locale set required by [LOCALIZATION.md](../../../../LOCALIZATION.md). The imported body is preserved after the documented privacy/scope removals, heading nesting, and trailing-whitespace normalization.
