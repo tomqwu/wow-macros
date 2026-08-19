@@ -16,14 +16,14 @@ Content is currently organized for TBC only. Future game versions should use sib
 
 ## File conventions
 
-- English macro: `<version>/classes/<class>/macros/<specialization>-<purpose>.enUS.macro`
-- Simplified Chinese macro: `<version>/classes/<class>/macros/<specialization>-<purpose>.zhCN.macro`
-- Client-neutral macro: `<version>/classes/<class>/macros/<specialization>-<purpose>.macro`
+- Class macro collection: `<version>/classes/<class>/macros.md`
 - Talent build: `<version>/classes/<class>/talents/<specialization>-<build>.md`
-- Cross-session reference awaiting verification or localization: `<version>/classes/<class>/context/<topic>.md`
+- Cross-session macro references awaiting verification stay in the matching class's `macros.md` with an explicit status.
 - Use lowercase kebab-case filenames.
 - Record the game version or patch and verification date when behavior can change.
-- Keep explanations next to the macro or import string they describe.
-- Keep English and Simplified Chinese macro variants behaviorally identical. Talent files include English and 简体中文 explanation sections.
+- Give each macro a specialization-and-purpose heading and keep its explanation beside its code.
+- Keep matching English (`enUS`) and Simplified Chinese (`zhCN`) code blocks together under the same macro entry and behaviorally identical.
+- Do not create a separate file for each macro.
+- Talent files include English and 简体中文 explanation sections.
 
 See [LOCALIZATION.md](LOCALIZATION.md) for client-language and verification rules. / 客户端语言及验证规则请参阅 [LOCALIZATION.md](LOCALIZATION.md)。
