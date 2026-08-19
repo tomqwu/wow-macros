@@ -10,19 +10,15 @@ Each Retail class has separate areas for macros and talents. Add one macro or bu
 
 | Class | Specializations | Macros | Talents |
 | --- | --- | --- | --- |
-| Death Knight | Blood, Frost, Unholy | [Macros](classes/death-knight/macros/) | [Talents](classes/death-knight/talents/) |
-| Demon Hunter | Devourer, Havoc, Vengeance | [Macros](classes/demon-hunter/macros/) | [Talents](classes/demon-hunter/talents/) |
-| Druid | Balance, Feral, Guardian, Restoration | [Macros](classes/druid/macros/) | [Talents](classes/druid/talents/) |
-| Evoker | Augmentation, Devastation, Preservation | [Macros](classes/evoker/macros/) | [Talents](classes/evoker/talents/) |
-| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](classes/hunter/macros/) | [Talents](classes/hunter/talents/) |
-| Mage | Arcane, Fire, Frost | [Macros](classes/mage/macros/) | [Talents](classes/mage/talents/) |
-| Monk | Brewmaster, Mistweaver, Windwalker | [Macros](classes/monk/macros/) | [Talents](classes/monk/talents/) |
-| Paladin | Holy, Protection, Retribution | [Macros](classes/paladin/macros/) | [Talents](classes/paladin/talents/) |
-| Priest | Discipline, Holy, Shadow | [Macros](classes/priest/macros/) | [Talents](classes/priest/talents/) |
-| Rogue | Assassination, Outlaw, Subtlety | [Macros](classes/rogue/macros/) | [Talents](classes/rogue/talents/) |
-| Shaman | Elemental, Enhancement, Restoration | [Macros](classes/shaman/macros/) | [Talents](classes/shaman/talents/) |
-| Warlock | Affliction, Demonology, Destruction | [Macros](classes/warlock/macros/) | [Talents](classes/warlock/talents/) |
-| Warrior | Arms, Fury, Protection | [Macros](classes/warrior/macros/) | [Talents](classes/warrior/talents/) |
+| Druid | Balance, Feral, Guardian, Restoration | [Macros](tbc/classes/druid/macros/) | [Talents](tbc/classes/druid/talents/) |
+| Hunter | Beast Mastery, Marksmanship, Survival | [Macros](tbc/classes/hunter/macros/) | [Talents](tbc/classes/hunter/talents/) |
+| Mage | Arcane, Fire, Frost | [Macros](tbc/classes/mage/macros/) | [Talents](tbc/classes/mage/talents/) |
+| Paladin | Holy, Protection, Retribution | [Macros](tbc/classes/paladin/macros/) | [Talents](tbc/classes/paladin/talents/) |
+| Priest | Discipline, Holy, Shadow | [Macros](tbc/classes/priest/macros/) | [Talents](tbc/classes/priest/talents/) |
+| Rogue | Assassination, Outlaw, Subtlety | [Macros](tbc/classes/rogue/macros/) | [Talents](tbc/classes/rogue/talents/) |
+| Shaman | Elemental, Enhancement, Restoration | [Macros](tbc/classes/shaman/macros/) | [Talents](tbc/classes/shaman/talents/) |
+| Warlock | Affliction, Demonology, Destruction | [Macros](tbc/classes/warlock/macros/) | [Talents](tbc/classes/warlock/talents/) |
+| Warrior | Arms, Fury, Protection | [Macros](tbc/classes/warrior/macros/) | [Talents](tbc/classes/warrior/talents/) |
 
 The list reflects Retail as verified on 2026-08-18. It includes the Devourer Demon Hunter specialization introduced with Midnight. See Blizzard's [playable class reference](https://worldofwarcraft.blizzard.com/en-us/game/classes) and [Midnight launch overview](https://worldofwarcraft.blizzard.com/en-us/news/24243639/world-of-warcraft-midnight%E2%84%A2-goes-live-march-2).
 
