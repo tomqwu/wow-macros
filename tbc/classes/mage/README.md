@@ -1,14 +1,45 @@
 # Mage macros
 
-TBC talent trees: Arcane, Fire, Frost.
+## Player profile
 
-Keep every Mage macro in this document. For client-sensitive entries, include matching sections for:
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic / TBC Anniversary; exact client build not supplied |
+| Class | Mage |
+| Level | Not supplied |
+| Talent build | Not supplied |
+| Key talents | Not supplied |
+| Role / content | Not supplied |
+| Rotation source | Not supplied |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | Awaiting a player profile; no macros generated |
 
-- `English (enUS)`
-- `简体中文 (zhCN)`
+## Rotation and talent model
 
-## Published macros
+### Player rotation
 
-No verified Mage macros have been added yet.
+- Opener: Not supplied.
+- Sustained priority: Not supplied.
+- Cooldowns / emergencies: Not supplied.
 
-Keep behavior identical across locale variants and verify localized game names before publishing. Follow the [client localization guide](../../../LOCALIZATION.md).
+### Macro opportunities
+
+- Await the Mage's talent build, rotation, content, and targeting needs before choosing macros.
+
+### Deliberately not macroed
+
+- No generic Mage rotation or talent abilities are inferred without player context.
+
+## Macro set
+
+No paired macros yet.
+
+## Imported reference backlog
+
+No imported Mage source material yet.
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

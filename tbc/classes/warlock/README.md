@@ -1,8 +1,43 @@
 # Warlock macros
 
-TBC talent trees: Affliction, Demonology, Destruction.
+## Player profile
 
-Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic, Phase 2 raid context; exact client build not supplied |
+| Class | Warlock |
+| Level | Not supplied |
+| Talent build | Primarily Shadow Destruction with occasional Fire Destruction; exact point allocation not supplied |
+| Key talents | Source includes Shadowburn, Conflagrate, Demonic Sacrifice, and other alternative-build or utility actions |
+| Role / content | Raid DPS, curses, threat, AoE, focus control, pet management, summons, consumables, and utility |
+| Rotation source | Imported `zhCN` pack includes Shadow and Fire Destruction raid priorities, AoE, threat rules, and keybinds |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | 59 `zhCN` macro blocks remain `imported-reference`; no paired macro set yet |
+
+## Rotation and talent model
+
+### Player rotation
+
+- Opener: The source supplies curse and damage setup for Shadow and Fire raid variants; the active variant is not selected.
+- Sustained priority: Shadow Bolt or Incinerate paths, Immolate/Conflagrate for Fire, curse assignments, AoE, and threat rules are documented.
+- Cooldowns / emergencies: Trinkets, Destruction Potion, Soulshatter, health consumables, pet sacrifice, crowd control, and summons appear in the source.
+
+### Macro opportunities
+
+- Generate a compact set for the selected Shadow or Fire build, assigned curse, active pet, encounter role, and target preferences.
+- Derive pet-control, focus control, curse, DPS, threat, consumable, and summon macros from those choices.
+
+### Deliberately not macroed
+
+- Damage priority, DoT refreshes, curse assignment changes, threat decisions, and pet choice remain manual.
+- Alternative Shadow/Fire and pet-specific actions are not promoted as one player loadout without the active build and pet plan.
+
+## Macro set
+
+No paired macros yet. Select the active Destruction variant and pet plan, then add and test matching `enUS` variants.
+
+## Imported reference backlog
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -836,3 +871,8 @@ Warlock threat priority:
   - `[pet:imp]`
 - Keep Chinese spell names for `/cast`.
 - Test every pet macro outside raid first.
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

@@ -1,8 +1,43 @@
 # Priest macros
 
-TBC talent trees: Discipline, Holy, Shadow.
+## Player profile
 
-Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic; exact client build not supplied |
+| Class | Priest |
+| Level | Not supplied |
+| Talent build | Source spans Shadow PvE, Holy/Discipline healing, and Discipline PvP; exact allocations not supplied |
+| Key talents | Source includes Vampiric Touch, Circle of Healing, Pain Suppression, Power Infusion, and other alternative-build abilities |
+| Role / content | Shadow raid and dungeon DPS, healing offspec, dispels, resurrection, and arena targeting |
+| Rotation source | Imported `enUS` pack includes boss, mana-safe raid, and multi-mob Shadow priorities plus healing and PvP notes |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | 68 `enUS` macro blocks plus a partial `zhCN` glossary remain `imported-reference`; no paired macro set yet |
+
+## Rotation and talent model
+
+### Player rotation
+
+- Opener: The source supplies Shadow boss and dungeon DoT openers; healer and PvP openers are not normalized.
+- Sustained priority: Vampiric Touch, Shadow Word: Pain, Mind Blast, Mind Flay, mana rules, and multi-target limits are documented in the source.
+- Cooldowns / emergencies: Inner Focus, Shadowfiend, Fade, emergency healing out of Shadowform, Pain Suppression, and Power Infusion appear across builds.
+
+### Macro opportunities
+
+- Generate a build-specific set for Shadow targeting, healer mouseover priorities, dispels, or arena party/focus control.
+- Use the supplied rotation to identify targeting conveniences without hiding DoT refresh and channel timing.
+
+### Deliberately not macroed
+
+- DoT refresh timing, Mind Flay clipping, mana decisions, healing triage, and the full Shadow priority remain manual.
+- Mutually exclusive Holy, Discipline, and Shadow talents are not promoted as one player loadout.
+
+## Macro set
+
+No paired macros yet. Choose one active Priest build, complete its `zhCN` tokens, and test both locale variants before promotion.
+
+## Imported reference backlog
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -866,3 +901,8 @@ VT + SW:P skull
 SW:P 1–2 extra mobs only if pull lives long enough
 Focus skull
 ```
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

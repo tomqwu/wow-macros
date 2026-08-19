@@ -1,8 +1,43 @@
 # Paladin macros
 
-TBC talent trees: Holy, Protection, Retribution.
+## Player profile
 
-Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic / TBC Anniversary; exact client build not supplied |
+| Class | Paladin |
+| Level | 70 |
+| Talent build | Source spans Retribution, Protection, and Holy; no single point allocation supplied |
+| Key talents | Source includes Crusader Strike, Avenger's Shield, Holy Shock, Divine Favor, and other build-specific actions |
+| Role / content | Retribution questing and raid play, Protection tanking, Holy healing, universal utility, and engineering items |
+| Rotation source | Imported `zhCN` pack includes Retribution seal-twist timing plus Protection and Holy priorities |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | Multi-build `zhCN` source remains `imported-reference`; no paired macro set yet |
+
+## Rotation and talent model
+
+### Player rotation
+
+- Opener: The source includes a Retribution raid opener using Judgement and seal setup; Protection and Holy openers are not normalized.
+- Sustained priority: Retribution seal twisting, Protection threat actions, and Holy healing choices are documented as separate source sections.
+- Cooldowns / emergencies: Avenging Wrath, trinkets, Divine Favor healing, immunities, blessings, and Lay on Hands appear in the source.
+
+### Macro opportunities
+
+- Generate one build-specific macro set after the active talent allocation and role are selected.
+- Derive seal, Judgement, healing mouseover, taunt, blessing, immunity, and item macros from the chosen rotation and utility plan.
+
+### Deliberately not macroed
+
+- Seal-twist swing timing, Judgement decisions, tank threat priority, and healing triage remain player-controlled.
+- Macros from mutually exclusive builds are not promoted together as one player loadout.
+
+## Macro set
+
+No paired macros yet. Select one active Paladin build and pair only the relevant source macros with `enUS` variants.
+
+## Imported reference backlog
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -1133,3 +1168,8 @@ Do not judge 命令圣印等级1.
 Do not press 十字军打击 in final twist window.
 Do not use 愤怒之锤 in normal raid rotation.
 ```
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

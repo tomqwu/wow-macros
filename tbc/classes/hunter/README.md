@@ -1,8 +1,43 @@
 # Hunter macros
 
-TBC talent trees: Beast Mastery, Marksmanship, Survival.
+## Player profile
 
-Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic / Anniversary-style TBC; exact client build not supplied |
+| Class | Hunter |
+| Level | 70 |
+| Talent build | No single allocation supplied; source spans Beast Mastery, Marksmanship, and Survival-only abilities |
+| Key talents | Source mentions Bestial Wrath, Intimidation, Silencing Shot, and Wyvern Sting across alternative builds |
+| Role / content | PvE rotation, raids, Misdirection, pet control, traps, Tempest Keep skips, and PvP focus control |
+| Rotation source | Imported `zhCN` pack includes Steady Shot timing, Auto Shot, Kill Command, cooldowns, and keybind notes |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | 44 named `zhCN` macro blocks remain `imported-reference`; no paired macro set yet |
+
+## Rotation and talent model
+
+### Player rotation
+
+- Opener: Hunter's Mark and pet attack are supplied as an opener utility; exact encounter opener is not normalized.
+- Sustained priority: The source discusses timing Steady Shot around Auto Shot and using Kill Command, but no single talent-specific priority is confirmed.
+- Cooldowns / emergencies: Bestial Wrath with trinkets, Feign Death, traps, pet recall, and Misdirection appear in the source.
+
+### Macro opportunities
+
+- Derive shot, Misdirection, pet-control, trap, aspect, and focus macros after selecting one actual talent build and rotation.
+- Preserve the supplied Ravager and Wind Serpent context when generating pet-specific controls.
+
+### Deliberately not macroed
+
+- Auto Shot weaving and the full damage priority remain manual because timing cannot be selected intelligently by a macro.
+- Talent-only abilities are not promoted until the player's active build is identified.
+
+## Macro set
+
+No paired macros yet. The imported `zhCN` pack must be reduced to the player's actual build and paired with tested `enUS` variants.
+
+## Imported reference backlog
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -596,3 +631,8 @@ For TK skip duty, place these next to each other:
 - Macro spell names must exactly match the Simplified Chinese client. Do not insert English spell names into these macros unless the game client language is changed.
 
 ---
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

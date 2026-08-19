@@ -1,8 +1,43 @@
 # Rogue macros
 
-TBC talent trees: Assassination, Combat, Subtlety.
+## Player profile
 
-Verified entries keep English (`enUS`) and Simplified Chinese (`zhCN`) variants together. The imported source material below remains unverified until matching variants are tested.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic; exact client build not supplied |
+| Class | Rogue |
+| Level | Not supplied |
+| Talent build | Combat; exact point allocation not supplied |
+| Key talents | Source includes Riposte, Blade Flurry, and Adrenaline Rush |
+| Role / content | Leveling, Mana-Tombs stealth farming, dungeon farming, and basic PvP |
+| Rotation source | Imported `zhCN` pack includes normal Combat and stealth-farming priorities, poisons, items, and keybinds |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | 26 `zhCN` macros remain `imported-reference`; no paired macro set yet |
+
+## Rotation and talent model
+
+### Player rotation
+
+- Opener: The source supplies stealth openers such as Pick Pocket with Cheap Shot and control for bypassing dungeon targets.
+- Sustained priority: Sinister Strike generation, Riposte when available, finishers, interrupts, and cooldown use are described at a high level.
+- Cooldowns / emergencies: Blade Flurry, Adrenaline Rush, Vanish, Evasion, Sprint, Cloak of Shadows, and bandages appear in the source.
+
+### Macro opportunities
+
+- Derive attack-start, stop-attack control, mouseover interrupts, stealth safety, cooldown, poison, and focus macros from the Combat plan.
+- Narrow the set for leveling, farming, or PvP instead of publishing every situational source macro at once.
+
+### Deliberately not macroed
+
+- Combo-point spend decisions, energy timing, positional choices, and escape decisions remain manual.
+- Poison ranks and bag items are not promoted until the player's actual inventory and client names are supplied.
+
+## Macro set
+
+No paired macros yet. Select the intended Combat activity and add matching `enUS` variants before promotion.
+
+## Imported reference backlog
 
 > **Status:** Imported reference only — not a verified or fully localized macro release.
 
@@ -512,3 +547,8 @@ For humanoid targets:
 ---
 
 ## End of TBC Rogue Combat Macro Pack
+
+## Verification log
+
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |

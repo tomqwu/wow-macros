@@ -1,21 +1,49 @@
 # Druid macros
 
-TBC talent trees: Balance, Feral, Restoration.
+## Player profile
 
-Each macro entry keeps its English (`enUS`) and Simplified Chinese (`zhCN`) client variants together in this document.
+| Field | Value |
+| --- | --- |
+| Game version | WoW TBC Classic / TBC Anniversary; exact client build not supplied |
+| Class | Druid |
+| Level | Not supplied |
+| Talent build | Restoration; point allocation not supplied |
+| Key talents | Nature's Swiftness |
+| Role / content | Emergency healing through Cell or another secure raid frame; arena-safe fallback requested |
+| Rotation source | Only the emergency-heal step was supplied; full healing rotation was not supplied |
+| Client locales | English (`enUS`), Simplified Chinese (`zhCN`) |
+| Last updated | 2026-08-18 |
+| Overall status | Two paired macros are `ready-for-client-test`; no in-client results recorded |
 
-## Restoration — Nature's Swiftness + Healing Touch
+## Rotation and talent model
 
-- Game: WoW TBC Classic / TBC Anniversary
-- Specialization: Restoration Druid
-- Purpose: One-button emergency mouseover heal
-- Client locales: `enUS`, `zhCN`
-- Verification date: 2026-08-18
-- Source: User-supplied `enUS` and `zhCN` session context
+### Player rotation
 
-### Recommended
+- Opener: Not supplied.
+- Sustained priority: Not supplied.
+- Cooldowns / emergencies: Stop the current cast, leave form if necessary, activate Nature's Swiftness, then cast the highest learned Healing Touch on the intended friendly unit.
 
-Target priority: friendly living mouseover, friendly living target, then the player.
+### Macro opportunities
+
+- Combine the explicit Nature's Swiftness emergency step with a documented friendly target priority.
+- Provide a raid-frame version that falls back to a friendly target, plus an arena-safe version that skips the current target.
+- Preserve one-key access from Bear, Cat, Travel, or Tree Form by cancelling form first.
+
+### Deliberately not macroed
+
+- The normal Restoration healing rotation was not supplied and is not inferred.
+- Cooldown or buff detection remains manual; the macro must not claim to decide whether Nature's Swiftness is ready.
+
+## Macro set
+
+### Restoration — Nature's Swiftness emergency heal
+
+- ID: `restoration-natures-swiftness-healing-touch`
+- Status: `ready-for-client-test`
+- Derived from: The supplied Nature's Swiftness emergency-heal step and Restoration talent choice
+- Use case: Stop the current cast and perform the emergency heal from any form
+- Targeting: Friendly living mouseover, friendly living target, then player
+- Limitations: If Nature's Swiftness is unavailable, Healing Touch can begin a normal hard cast; exact client build was not supplied
 
 #### English (`enUS`)
 
@@ -37,9 +65,14 @@ Target priority: friendly living mouseover, friendly living target, then the pla
 /cast [@mouseover,help,nodead][@target,help,nodead][@player] 治疗之触
 ```
 
-### Arena-safe
+### Restoration — Nature's Swiftness emergency heal, arena-safe
 
-Target priority: friendly living mouseover, then the player. The current target is intentionally skipped.
+- ID: `restoration-natures-swiftness-healing-touch-arena-safe`
+- Status: `ready-for-client-test`
+- Derived from: The same emergency step with the requested arena-safe target restriction
+- Use case: Emergency heal without accidentally selecting a friendly current target
+- Targeting: Friendly living mouseover, then player; current target is intentionally skipped
+- Limitations: If Nature's Swiftness is unavailable, Healing Touch can begin a normal hard cast; exact client build was not supplied
 
 #### English (`enUS`)
 
@@ -61,38 +94,19 @@ Target priority: friendly living mouseover, then the player. The current target 
 /cast [@mouseover,help,nodead][@player] 治疗之触
 ```
 
-### English notes
+### Usage notes
 
-The macro stops the current cast, cancels any shapeshift form, activates Nature's Swiftness, and casts the highest learned rank of Healing Touch.
+A keyboard-bound mouseover macro works over Cell and other secure raid frames. Put the macro on an action bar and bind that slot. On macOS, a Logitech MX side button can be mapped to an unused key such as `F8` or `F9`, then that key can be bound in WoW.
 
-The recommended version uses this target priority:
+自然迅捷冷却时，此宏可能开始正常读条施放治疗之触。请保留自然迅捷的提示图标，并只在技能可用时使用。如果本地化名称被客户端拒绝，请从对应客户端的法术书中按 Shift 点击插入准确名称。
 
-1. Friendly, living mouseover unit.
-2. Friendly, living current target.
-3. Player character.
+## Imported reference backlog
 
-The arena-safe version skips the current target and uses mouseover, then the player. This avoids healing an unintended friendly target.
+No unpaired macro backlog remains for the supplied Druid context. The original `enUS` and `zhCN` emergency-heal variants were incorporated into the macro set; client test evidence is still missing.
 
-### Cell and mouse usage
+## Verification log
 
-A keyboard-bound mouseover macro works over Cell and other secure raid frames. Put the macro on an action bar and bind that slot. On macOS, a Logitech MX side button can be mapped to an unused key such as `F8` or `F9` in Logi Options+, then that key can be bound in WoW.
-
-### Limitation
-
-WoW macros cannot conditionally test whether the Nature's Swiftness buff is active. If it is on cooldown, pressing the macro can begin a normal hard-cast Healing Touch. Keep the Nature's Swiftness tooltip visible and use the macro when the cooldown is ready.
-
-Suggested binding: `R`, `Shift-R`, or a mapped mouse button.
-
-### 简体中文说明
-
-此宏会停止当前施法、取消变形形态、激活自然迅捷，并施放已学会的最高等级治疗之触。
-
-推荐版的目标优先级为：友方存活鼠标指向目标、友方存活当前目标、玩家自己。竞技场安全版会跳过当前目标，只治疗鼠标指向目标，否则治疗自己。
-
-普通按键绑定的鼠标指向宏可在 Cell 等安全团队框架上使用。自然迅捷冷却时，此宏可能开始正常读条施放治疗之触；请保留自然迅捷的提示图标，并只在技能可用时使用。
-
-### Localization sources
-
-- `enUS` and `zhCN` macro text was supplied directly in the session context.
-
-If any localized token is rejected by the TBC client, replace it by Shift-clicking the exact spell from that client's spellbook into the macro editor.
+| Macro ID | Status | enUS | zhCN | Client build | Date | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| `restoration-natures-swiftness-healing-touch` | `ready-for-client-test` | source supplied; static review | source supplied; static review | Not supplied | 2026-08-18 | Test form cancellation, target fallbacks, and cooldown failure behavior. |
+| `restoration-natures-swiftness-healing-touch-arena-safe` | `ready-for-client-test` | source supplied; static review | source supplied; static review | Not supplied | 2026-08-18 | Test mouseover and self fallback without a friendly target fallback. |
